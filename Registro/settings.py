@@ -89,7 +89,7 @@ DATABASES = {
 }
 
 #postgres://cpantasmaregiter_user:BO5ySCKd8Ghw2CqyxoOsg0wgbpg60pFD@dpg-cjc578ndb61s73cq6lf0-a.oregon-postgres.render.com/cpantasmaregiter
-database_url = os.environ.get("DATABASES_URL")
+database_url = 'postgres://cpantasmaregiter_user:BO5ySCKd8Ghw2CqyxoOsg0wgbpg60pFD@dpg-cjc578ndb61s73cq6lf0-a.oregon-postgres.render.com/cpantasmaregiter' #os.environ.get("DATABASES_URL")
 DATABASES['default'] = dj_database_url.parse(database_url)
 
 # Password validation
